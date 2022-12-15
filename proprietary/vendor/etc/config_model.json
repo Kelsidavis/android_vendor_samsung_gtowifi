@@ -1,0 +1,125 @@
+{
+  "Resources": [
+    {
+      "Name": "CPUMinFreq",
+      "ID" : "0x12001001",
+      "Handler" : "qc",
+      "FreqTablePath" : "/sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies",
+      "BoostPath" : "0x40800000",
+      "Formula": "x / 1000",
+      "Priority" : "high",
+      "ViewLog": "1"
+    },
+    {
+      "Name": "CPUMaxFreq",
+      "ID" : "0x12001002",
+      "Handler" : "qc",
+      "FreqTablePath" : "/sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies",
+      "BoostPath" : "0x40804000",
+      "Formula": "x / 1000",
+      "Priority" : "low",
+      "ViewLog": "1"
+    }
+  ],
+  "Hints": [
+    {
+      "Hint": "AMS_APP_SWITCH",
+      "ResoureList": [
+        {
+            "Resource" : "StorageClkEnable",
+            "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "APP_LAUNCH",
+      "ResoureList": [
+        {
+            "Resource" : "StorageClkEnable",
+            "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH_M",
+      "ResoureList": [
+        {
+            "Resource" : "StorageClkEnable",
+            "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH_LM",
+      "ResoureList": [
+        {
+            "Resource" : "StorageClkEnable",
+            "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH",
+      "ResoureList": [
+        {
+            "Resource" : "StorageClkEnable",
+            "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "POWER_HINT_APP_LAUNCH",
+      "ResoureList": [
+        {
+            "Resource" : "StorageClkEnable",
+            "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_START",
+      "ResoureList": [
+        {
+            "Resource" : "LPMBias",
+            "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_START_LOW",
+      "ResoureList": [
+        {
+            "Resource" : "LPMBias",
+            "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_LAZY",
+      "ResoureList": [
+        {
+            "Resource" : "LPMBias",
+            "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_SWITCH",
+      "ResoureList": [
+        {
+            "Resource" : "LPMBias",
+            "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "GESTURE_DETECTED",
+      "ResoureList": [
+        {
+            "Resource" : "LPMBias",
+            "Value" : "NONE"
+        }
+      ]
+    }
+  ]
+}
